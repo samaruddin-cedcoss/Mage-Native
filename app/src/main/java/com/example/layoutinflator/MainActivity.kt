@@ -1,10 +1,10 @@
 package com.example.layoutinflator
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toolbar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
@@ -13,11 +13,12 @@ import me.relex.circleindicator.CircleIndicator3
 class MainActivity : AppCompatActivity() {
 
     lateinit var linearLayout: LinearLayout
-    lateinit var myAdapter: MyAdapter
-    lateinit var viewAdapter: ViewPageAdapter
+//    lateinit var myAdapter: MyAdapter
+//    lateinit var viewAdapter: ViewPageAdapter
     lateinit var categoryRecycler : RecyclerView
     lateinit var viewPager2: ViewPager2
     lateinit var marqueeText : TextView
+    lateinit var toolbar: androidx.appcompat.widget.Toolbar
 
     lateinit var indicator : CircleIndicator3
 
@@ -167,7 +168,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setToolBar() {
 
-        val view = layoutInflater.inflate(R.layout.top_bar,null)
+        val view = layoutInflater.inflate(R.layout.action_bar,null)
 
         linearLayout.addView(view)
 

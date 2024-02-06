@@ -6,6 +6,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
+
         <LinearLayout
             android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
@@ -42,6 +44,12 @@
                 </LinearLayout>
             </com.google.android.material.appbar.MaterialToolbar>
 
+            <com.google.android.material.navigation.NavigationView
+                android:layout_gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:headerLayout="@layout/drawer_header"
+                app:menu="@menu/drawer_menu"/>
 
         </LinearLayout>
 
@@ -52,12 +60,4 @@
 
 
 
-    </LinearLayout>
-
-
-<!--    <com.google.android.material.navigation.NavigationView-->
-<!--        android:layout_gravity="start"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        app:headerLayout="@layout/drawer_header"-->
-<!--        app:menu="@menu/drawer_menu"/>-->
+</LinearLayout>
